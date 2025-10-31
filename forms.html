@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="static/css/formstyle.css">
+    <link rel="shortcut icon" href="static/images/orsrc15598.jpg" type="image/x-icon">
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <div class="form-box">
+    <form action="/submit_registration" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required placeholder="Enter First name">
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+
+        <label for="custom">Custom</label>
+        <input type="radio" id="custom" name="gender" value="custom" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="cpass">Confirm Password:</label>
+        <input type="password" id="cpass" name="cpass" required>
+
+        <label for="course">Course Taken</label><br>
+        <select name="course" id="course">
+            <option value="js">JavaScript</option>
+            <option value="py">Python</option>
+            <option value="java">Java</option>
+        </select>
+
+        <input type="submit" value="Register">
+        <button type="submit">Register</button>
+    </form>
+    </div>
+</body>
+</html>
